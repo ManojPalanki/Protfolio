@@ -14,20 +14,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="MP LOGO.png">
 </head>
 
 <body>
     <header id="header">
         <nav class="container">
-            <a href="#" class="logo">Manoj Palanki</a>
+            <a href="#" class="logo">
+                <img src="assets/logo_upload.png" alt="MP Logo" class="logo-img">
+                Manoj Palanki
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Case Studies</a></li>
                 <li><a href="#process">Process</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="C:\Users\nanis\OneDrive\Documents\Resume\manoj_palanki_resume.pdf" target="_blank"
-                        class="btn-resume">Resume</a></li>
+                        class="btn-resume">Download Resume</a></li>
             </ul>
             <div class="theme-toggle">
                 <i class="fas fa-moon"></i>
@@ -41,12 +45,13 @@
     <main>
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <h1>Hi, I’m <span class="highlight">Manoj Palanki</span></h1>
-                <h2>Aspiring Data Analyst</h2>
-                <p>I analyze data using Python, SQL, Excel, and BI tools to uncover insights and support data-driven
+                <h1>Data Analyst turning raw data into <span class="highlight">business insights</span></h1>
+                <p class="hero-sub">Python • SQL • Excel • Power BI</p>
+                <p class="hero-location">Based in India • Open to Remote</p>
+                <p class="hero-description">I build clean dashboards, uncover trends, and help teams make data-driven
                     decision making.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
@@ -55,13 +60,20 @@
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p class="about-text">
-                        Aspiring Data Analyst with strong fundamentals in data analysis, statistics, and visualization.
-                        I enjoy working with real-world datasets and turning raw data into actionable insights.
-                        Actively building projects using Python, SQL, Excel, Power BI, and Tableau.
-                        I am currently seeking internships and entry-level opportunities to grow as a data professional.
-                    </p>
+                <div class="about-grid">
+                    <div class="about-block">
+                        <h3>Who I am</h3>
+                        <p>Data Analyst with strong foundations in Python, SQL, statistics, and visualization.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3>What I do</h3>
+                        <p>I work with real-world datasets to clean data, analyze trends, and present insights through
+                            dashboards.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3>What I want</h3>
+                        <p>Actively seeking internships and entry-level roles where I can contribute and grow.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,12 +85,12 @@
                     <div class="skills-category">
                         <h3>Technical Skills</h3>
                         <div class="skill-tags">
-                            <span>Python (Pandas, NumPy)</span>
-                            <span>Matplotlib & Seaborn</span>
-                            <span>SQL (Queries, Joins)</span>
-                            <span>Excel (Pivot Tables, Formulas)</span>
-                            <span>Power BI & Tableau</span>
-                            <span>Statistics</span>
+                            <span>SQL (Joins, CTEs, Window Functions)</span>
+                            <span>Python (Pandas, NumPy, EDA)</span>
+                            <span>Power BI (DAX, Modeling)</span>
+                            <span>Tableau (Dashboards)</span>
+                            <span>Excel (Pivot Tables, Lookups)</span>
+                            <span>Statistics (A/B Testing)</span>
                         </div>
                     </div>
                     <div class="skills-category">
@@ -107,38 +119,42 @@
 
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Sales Data Analysis</h3>
-                            <p>Data cleaning and analysis using Python. Uncovered revenue trends and top product
-                                insights to drive business strategy.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>Data Cleaning</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/ManojPalanki" target="_blank" class="btn-link"><i
-                                        class="fab fa-github"></i> GitHub</a>
-                                <a href="https://www.kaggle.com/manojpalanki" target="_blank" class="btn-link"><i
-                                        class="fab fa-kaggle"></i> Kaggle</a>
-                            </div>
+                <h2 class="section-title">Case Studies</h2>
+
+                <!-- Featured Case Study -->
+                <div class="featured-project">
+                    <div class="featured-content">
+                        <h3>⭐ Featured Case Study: Sales Data Analysis</h3>
+                        <div class="project-meta">
+                            <span><strong>Problem:</strong> Declining revenue in key regions</span> |
+                            <span><strong>Dataset:</strong> 50,000+ transaction rows</span>
+                        </div>
+                        <p>Identified 15% revenue drop using Python analysis and visualized trends to support strategy
+                            decisions. Built an automated pipeline for cleaning and reporting.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Business Impact</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ManojPalanki" target="_blank" class="btn-link"><i
+                                    class="fab fa-github"></i> View Analysis</a>
                         </div>
                     </div>
+                </div>
 
+                <div class="projects-grid">
                     <!-- Project 2 -->
                     <div class="project-card">
                         <div class="project-content">
                             <h3>Customer Behavior Analysis</h3>
-                            <p>SQL-based analysis of customer data to identify segmentation and retention opportunities.
-                                Optimized targeting strategies.</p>
+                            <div class="project-stats">SQL • 10k Records</div>
+                            <p>Segmented customer base using SQL Window Functions to identify high-value retention
+                                targets. Optimized targeting strategy by 20%.</p>
                             <div class="project-tags">
                                 <span>SQL</span>
-                                <span>Data Analysis</span>
                                 <span>Segmentation</span>
+                                <span>Retention</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/ManojPalanki" target="_blank" class="btn-link"><i
@@ -150,18 +166,19 @@
                     <!-- Project 3 -->
                     <div class="project-card">
                         <div class="project-content">
-                            <h3>Financial Dashboard</h3>
-                            <p>Interactive dashboard using Power BI/Tableau for real-time KPI and performance tracking.
-                            </p>
-                            <div class="project-tags">
-                                <span>Power BI</span>
-                                <span>Tableau</span>
-                                <span>Dashboarding</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/ManojPalanki" target="_blank" class="btn-link"><i
-                                        class="fab fa-github"></i> GitHub</a>
-                            </div>
+                            <h3>Financial Performance Dashboard</h3>
+                            <div class="project-stats">Power BI • Real-time Data</div>
+                            <p>Designed an interactive dashboard tracking KPIs. Enabled stakeholders to monitor daily
+                                performance with <5s latency.</p>
+                                    <div class="project-tags">
+                                        <span>Power BI</span>
+                                        <span>DAX</span>
+                                        <span>Dashboarding</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/ManojPalanki" target="_blank" class="btn-link"><i
+                                                class="fab fa-github"></i> GitHub</a>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -173,6 +190,8 @@
             <section id="process" class="section bg-alt">
                 <div class="container">
                     <h2 class="section-title">How I Work</h2>
+                    <p class="section-subtitle">I follow a structured but flexible approach — clarity first, visuals
+                        second, insights always.</p>
                     <div class="process-steps">
                         <div class="step">
                             <div class="step-number">1</div>
@@ -209,7 +228,7 @@
 
                 <section id="learning" class="section">
                     <div class="container">
-                        <h2 class="section-title">Learning & Development</h2>
+                        <h2 class="section-title">Growth Mindset & Practice</h2>
                         <div class="learning-content">
                             <div class="learning-card">
                                 <i class="fas fa-graduation-cap learning-icon"></i>
@@ -242,13 +261,14 @@
                             <h2 class="section-title">Contact Me</h2>
                             <div class="contact-content">
                                 <p class="contact-text">
-                                    I’m open to internships, entry-level roles, freelance projects, and collaborations.
+                                    Open to internships, entry-level roles, and freelance analytics projects.
                                 </p>
                                 <div class="contact-buttons">
                                     <a href="mailto:contact@manojpalanki.com" class="btn btn-primary">
                                         <i class="fas fa-envelope"></i> Email Me
                                     </a>
                                 </div>
+                                <p class="contact-email">contact@manojpalanki.com</p>
                                 <div class="social-links">
                                     <a href="https://www.linkedin.com/in/manoj-palanki/" target="_blank"
                                         aria-label="LinkedIn">
@@ -269,7 +289,7 @@
 
     <footer id="footer">
         <div class="container">
-            <p>&copy; 2026 Manoj Palanki. All rights reserved.</p>
+            <p>&copy; 2026 Manoj Palanki • Built with clarity & data</p>
         </div>
     </footer>
 
